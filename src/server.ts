@@ -747,8 +747,8 @@ export class Server extends EventEmitter {
       : "http://schemas.xmlsoap.org/soap/envelope/";
 
     let xml =
-      '<?xml version="1.0" encoding="utf-8"?>' +
-      '<soapenv:Envelope xmlns:soap="' +
+      '<?xml version="1.0" encoding="UTF-8"?>' +
+      '<soapenv:Envelope xmlns:soapenv="' +
       envelopeDefinition +
       '" ' +
       encoding +

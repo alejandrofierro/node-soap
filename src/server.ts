@@ -746,11 +746,13 @@ export class Server extends EventEmitter {
       ? "http://www.w3.org/2003/05/soap-envelope"
       : "http://schemas.xmlsoap.org/soap/envelope/";
 
+    //xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     let xml =
       '<?xml version="1.0" encoding="UTF-8"?>' +
       '<soapenv:Envelope xmlns:soapenv="' +
       envelopeDefinition +
       '" ' +
+      'xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ' +
       encoding +
       this.wsdl.xmlnsInEnvelope +
       ">";
